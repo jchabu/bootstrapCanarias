@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canarias Bootstrap 4</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,7 +22,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a href="#" class="navbar-brand mb-0 h1"><img src="./img/pdc-logo.png" width="auto" height="35px"> Canarias
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -27,20 +33,21 @@
                         <a href="#" class="nav-link">Portada</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Actividades</a>
+                        <a href="./pages/actividades.html" class="nav-link">Actividades</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownIslas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownIslas" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Islas
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownIslas">
-                            <a href="#" class="dropdown-item disabled">Santa Cruz de Tenerife</a>
+                            <h5 class="dropdown-header">Santa Cruz de Tenerife</h5>
                             <a href="#" class="dropdown-item">Tenerife</a>
                             <a href="#" class="dropdown-item">La Gomera</a>
                             <a href="#" class="dropdown-item">La Palma</a>
                             <a href="#" class="dropdown-item">El Hierro</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item disabled">Las Palmas de Gran Canaria</a>
+                            <h5 class="dropdown-header">Las Palmas de Gran Canaria</h5>
                             <a href="#" class="dropdown-item">Gran Canaria</a>
                             <a href="#" class="dropdown-item">Lanzarote</a>
                             <a href="#" class="dropdown-item">Fuerteventura</a>
@@ -48,7 +55,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contáctanos</a>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -60,11 +68,13 @@
                                     <div class="modal-body">
                                         <form>
                                             <div class="form-group">
-                                                <label for="recipient-name" class="col-form-label font-weight-bold">Asunto:</label>
+                                                <label for="recipient-name"
+                                                    class="col-form-label font-weight-bold">Asunto:</label>
                                                 <input type="text" class="form-control" id="recipient-name">
                                             </div>
                                             <div class="form-group">
-                                                <label for="message-text" class="col-form-label font-weight-bold">Mensaje:</label>
+                                                <label for="message-text"
+                                                    class="col-form-label font-weight-bold">Mensaje:</label>
                                                 <textarea class="form-control" id="message-text"></textarea>
                                             </div>
                                             <div class="form-row">
@@ -85,23 +95,24 @@
                                                     </label>
                                                 </div>
                                         </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-primary">Enviar mensaje</button>
-                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Enviar mensaje</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </li>
-                    <span class="glyphicon glyphicon-warning-sign yellow" aria-hidden="true"></span>
                 </ul>
                 <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" data-trigger="focus" data-toggle="tooltip" data-placement="bottom" title="Realiza una búsqueda en nuestra web">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" data-trigger="focus"
+                        data-toggle="tooltip" data-placement="bottom" title="Realiza una búsqueda en nuestra web">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="buttom">Buscar</button>
 
                 </form>
-                </div>
+            </div>
         </nav>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -120,7 +131,8 @@
                                 </li>
                                 <li class="nav-item p-2"><a href="#poblacion" class="text-decoration-none">Población</a>
                                 </li>
-                                <li class="nav-item p-2"><a href="#gastronomia" class="text-decoration-none">Gastronomía</a></li>
+                                <li class="nav-item p-2"><a href="#gastronomia"
+                                        class="text-decoration-none">Gastronomía</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -168,26 +180,39 @@
                         <div class="mt-5">
                             <h1 id="poblacion">Población por provincias</h1>
                             <nav class="nav nav-pills nav-justified">
-                                <a class="nav-item nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Santa
+                                <a class="nav-item nav-link active" id="pills-home-tab" data-toggle="pill"
+                                    href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Santa
                                     Cruz de Tenerife</a>
-                                <a class="nav-item nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-home" aria-selected="true">Las
+                                <a class="nav-item nav-link" id="pills-home-tab" data-toggle="pill"
+                                    href="#pills-profile" role="tab" aria-controls="pills-home" aria-selected="true">Las
                                     Palmas de Gran Canaria</a>
                             </nav>
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
                                     <ul class="list-group">
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
                                             Tenerife <span class="badge badge-primary">970.595</span></li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">La Gomera <span class="badge badge-primary">14.540</span></li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">El Hierro <span class="badge badge-primary">12.333</span></li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">La Palma <span class="badge badge-primary">85.001</span></li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">La
+                                            Gomera <span class="badge badge-primary">14.540</span></li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">El
+                                            Hierro <span class="badge badge-primary">12.333</span></li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">La
+                                            Palma <span class="badge badge-primary">85.001</span></li>
                                     </ul>
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
                                     <div class="btn-group-vertical btn-group-fill btn-group-vertical-fill">
-                                        <button type="button" class="btn btn-light btn-outline-dark d-flex justify-content-between align-items-center">Gran Canaria <span class="badge badge-info badge-pill">970.595</span></button>
-                                        <button type="button" class="btn btn-light btn-outline-dark d-flex justify-content-between align-items-center">Lanzarote <span class="badge badge-info badge-pill">970.595</span></button>
-                                        <button type="button" class="btn btn-light btn-outline-dark d-flex justify-content-between align-items-center">Fuerteventura <span class="badge badge-info badge-pill">970.595</span></button>
+                                        <button type="button"
+                                            class="btn btn-light btn-outline-dark d-flex justify-content-between align-items-center">Gran
+                                            Canaria <span class="badge badge-info badge-pill">970.595</span></button>
+                                        <button type="button"
+                                            class="btn btn-light btn-outline-dark d-flex justify-content-between align-items-center">Lanzarote
+                                            <span class="badge badge-info badge-pill">970.595</span></button>
+                                        <button type="button"
+                                            class="btn btn-light btn-outline-dark d-flex justify-content-between align-items-center">Fuerteventura
+                                            <span class="badge badge-info badge-pill">970.595</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -198,41 +223,63 @@
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Menú
-                                      </button>
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Menú
+                                            </button>
                                         </h5>
                                     </div>
 
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
                                         <div class="card-body">
 
                                             <div class="col-sm row">
                                                 <div class="col">
                                                     <h2>Primeros</h2>
                                                     <div class="list-group">
-                                                        <a class="list-group-item list-group-item-action list-group-item-secondary">Ensalada Tropical</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-secondary">Escaldón</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-secondary">Queso Asado</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-secondary">Croquetas</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-secondary">Ensalada
+                                                            Tropical</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-secondary">Escaldón</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-secondary">Queso
+                                                            Asado</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-secondary">Croquetas</a>
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <h2>Segundos</h2>
                                                     <div class="list-group">
-                                                        <a class="list-group-item list-group-item-action list-group-item-primary">Carne Fiesta</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-primary">Pollo Asado</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-primary">Garbanzas</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-primary">Potaje Berros</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-primary">Carne
+                                                            Fiesta</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-primary">Pollo
+                                                            Asado</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-primary">Garbanzas</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-primary">Potaje
+                                                            Berros</a>
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <h2>Postres</h2>
                                                     <div class="list-group">
-                                                        <a class="list-group-item list-group-item-action list-group-item-warning">Polvito Uruguayo</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-warning">Principe Alberto</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-warning">Frangoyo</a>
-                                                        <a class="list-group-item list-group-item-action list-group-item-warning">Quesillo</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-warning">Polvito
+                                                            Uruguayo</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-warning">Principe
+                                                            Alberto</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-warning">Frangoyo</a>
+                                                        <a
+                                                            class="list-group-item list-group-item-action list-group-item-warning">Quesillo</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -242,12 +289,15 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Precios
-                                      </button>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Precios
+                                            </button>
                                         </h5>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordion">
                                         <div class="card-body">
                                             <div class="panel panel-default">
                                                 <table class="table table-striped table-active table-hover">
@@ -256,7 +306,7 @@
                                                             <th>#</th>
                                                             <th>Primeros</th>
                                                             <th>Ingredientes</th>
-                                                            <th>Precio</th>
+                                                            <th>Precios</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>

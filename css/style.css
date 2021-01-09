@@ -5,3 +5,25 @@
 .btn-group-vertical-fill {
     width: 100%;
 }
+
+.card-deck {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card {
+    min-width: 333px;
+}
+
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-columns {
+        column-count: 2;
+    }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canarias Bootstrap 4</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand mb-0 h1"><img src="../img/pdc-logo.png" width="auto" height="35px"> Canarias
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Portada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Actividades</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownIslas" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Islas
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownIslas">
+                            <h5 class="dropdown-header">Santa Cruz de Tenerife</h5>
+                            <a href="#" class="dropdown-item">Tenerife</a>
+                            <a href="#" class="dropdown-item">La Gomera</a>
+                            <a href="#" class="dropdown-item">La Palma</a>
+                            <a href="#" class="dropdown-item">El Hierro</a>
+                            <div class="dropdown-divider"></div>
+                            <h5 class="dropdown-header">Las Palmas de Gran Canaria</h5>
+                            <a href="#" class="dropdown-item">Gran Canaria</a>
+                            <a href="#" class="dropdown-item">Lanzarote</a>
+                            <a href="#" class="dropdown-item">Fuerteventura</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contáctanos</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Escribe tu mensaje</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="recipient-name"
+                                                    class="col-form-label font-weight-bold">Asunto:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text"
+                                                    class="col-form-label font-weight-bold">Mensaje:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputName4" class="font-weight-bold">Nombre</label>
+                                                    <input type="name" class="form-control" id="inputName">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail4" class="font-weight-bold">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Aceptar términos y servicios
+                                                    </label>
+                                                </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" data-trigger="focus"
+                        data-toggle="tooltip" data-placement="bottom" title="Realiza una búsqueda en nuestra web">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="buttom">Buscar</button>
+
+                </form>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Portada</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Actividades</li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row h-100">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-9">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item active">
+                                <a class="nav-link active" data-toggle="tab" href="#deportes">Deportes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#rutas">Rutas</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content border">
+                            <div id="deportes" class="tab-pane fade in active show">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="card-deck">
+                                            <div class="card">
+                                                <img class="card-img-top" src="../img/buceo.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Buceo</h5>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Magni quos ex ad enim minus dolor expedita rem cum tempora
+                                                        magnam voluptatem laboriosam voluptates adipisci explicabo hic
+                                                        alias, quaerat harum? Explicabo!</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img class="card-img-top" src="../img/surf.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Surf</h5>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Neque aut consectetur odio ipsam ducimus, mollitia nemo
+                                                        dolores doloribus ex perspiciatis eos iusto laborum,
+                                                        exercitationem
+                                                        alias! Veritatis adipisci nulla eos libero!</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img class="card-img-top" src="../img/parapente.jpg"
+                                                    alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Parapente</h5>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur,
+                                                        adipisicing
+                                                        elit. Repellendus tempore deleniti quaerat est corrupti natus
+                                                        architecto. Neque corrupti pariatur quas nulla deserunt quae,
+                                                        soluta
+                                                        molestias fugit similique voluptates autem illum!</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="rutas" class="tab-pane fade">
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../img/rutas-afur.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card p-3">
+                                        <blockquote class="blockquote bg-success text-white mb-0 card-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                                erat a ante.</p>
+                                            <footer class="blockquote-footer">
+                                                <small class="text-muted">
+                                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </small>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="../img/rutas-barranco-las-vacas.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional content.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-primary text-white text-center p-3">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                                erat.</p>
+                                            <footer class="blockquote-footer">
+                                                <small>
+                                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </small>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional content.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img" src="../img/rutas-marcos-cordero.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card p-3 text-right">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                                erat a ante.</p>
+                                            <footer class="blockquote-footer">
+                                                <small class="text-muted">
+                                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </small>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This card has even longer content
+                                                than the first to show that equal height action.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
